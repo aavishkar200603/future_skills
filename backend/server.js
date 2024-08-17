@@ -23,7 +23,7 @@ app.listen(port, () => {
 
 //add your local mongodb database url  or maybe atlas mongodb database
 //mongodb+srv:<username>:<password>@cluster0.mongodb.net/<yourDatabaseName>
-mongoose.connect('mongodb://localhost:27017/yourDatabaseName', {
+mongoose.connect('mongodb+srv:<username>:<password>@cluster0.mongodb.net/<yourDatabaseName>', {
     useNewUrlParser: true,
     useUnifiedTopology: true,
 });
